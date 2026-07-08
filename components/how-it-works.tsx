@@ -11,17 +11,20 @@ const steps = [
   {
     number: "02",
     title: "Kirjanpito haltuun",
-    description: "Henkilökohtainen kirjanpitäjä ottaa taloushallintosi hoitoon — kirjanpito ja veroilmoitukset hoituvat.",
+    description:
+      "Henkilökohtainen kirjanpitäjä ottaa taloushallintosi hoitoon — kirjanpito ja veroilmoitukset hoituvat ajallaan lainmukaisesti ja oikein.",
   },
   {
     number: "03",
     title: "Nettisivut käyttöön",
-    description: "LeoDigital rakentaa räätälöidyt nettisivut brändisi mukaan, jotka löytyvät Googlesta ja tekoälyhauista.",
+    description:
+      "LeoDigital rakentaa räätälöidyt nettisivut brändisi mukaan, jotka löytyvät Googlesta ja tekoälyhauista. Niiden tarkoitus on helpottaa liiketoimintaasi ja tuoda sinut näkyville. Jatkuva ylläpito sekä domain, hosting, tietoturva ja päivitykset hoidetaan puolestasi — muutokset yhdellä WhatsApp-viestillä.",
   },
   {
     number: "04",
     title: "Jatkuva tuki",
-    description: "Domain, hosting, tietoturva ja päivitykset hoidetaan puolestasi — muutokset yhdellä WhatsApp-viestillä.",
+    description:
+      "Kaikki mitä tarvitset menestyvään yritykseesi niin taloudellisesti ja digitaalisesti arkeasi helpottaen. Saat jatkuvan tuen kirjanpitäjältäsi sekä muutokset kotisivuille tai verkkokauppaan helposti ja nopeasti yhdellä WhatsApp-viestillä.",
   },
 ]
 

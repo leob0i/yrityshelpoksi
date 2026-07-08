@@ -6,46 +6,55 @@ import { Button } from "@/components/ui/button"
 
 const plans = [
   {
-    name: "Vain nettisivut",
-    price: "49 €",
-    period: "/kk",
-    description: "LeoDigitalin nettisivupalvelut ilman kirjanpitoa.",
-    features: [
-      "Räätälöidyt sivut brändisi mukaan",
-      "Näkyvyys Googlessa ja tekoälyhauissa",
-      "Domain, hosting ja tietoturva",
-      "Päivitykset WhatsApp-viestillä",
-    ],
-    cta: "Pyydä tarjous",
-    featured: false,
-  },
-  {
     name: "Starter",
     price: "118,90 €",
     period: "/kk",
-    description: "Kirjanpito ja nettisivut samassa paketissa.",
-    note: "kirjanpito 69,90 € + nettisivut 49 € · Aloitusmaksu alk. 99 €",
+    description: "Sopii aloittaville yrityksille",
+    note: "Aloitusmaksu alk. 99 €",
     features: [
       "Henkilökohtainen kirjanpitäjä",
-      "Lakisääteinen kirjanpito ja veroilmoitukset",
-      "0–20 tositetta/kk, liikevaihto 0–100k",
-      "Räätälöidyt nettisivut (ei valmispohjia)",
-      "Näkyvyys Googlessa ja tekoälyhauissa",
-      "Domain, hosting ja ylläpito hoidettu",
+      "Kirjanpito ja veroilmoitukset",
+      "Räätälöidyt nettisivut + ylläpito",
+      "Domain, hosting ja tietoturva",
+      "WhatsApp-päivitykset",
+      "0–20 tositetta/kk",
+      "Liikevaihto 0–100 000 €/vuosi",
+    ],
+    cta: "Aloita nyt",
+    featured: false,
+  },
+  {
+    name: "Medium",
+    price: "188,90 €",
+    period: "/kk",
+    description: "Kasvaville yrityksille",
+    features: [
+      "Henkilökohtainen kirjanpitäjä",
+      "Kirjanpito ja veroilmoitukset",
+      "Räätälöidyt nettisivut + ylläpito",
+      "Domain, hosting ja tietoturva",
+      "WhatsApp-päivitykset",
+      "20–40 tositetta/kk",
+      "1–2 palkanlaskentaa/kk",
+      "Liikevaihto 100 000–300 000 €/vuosi",
     ],
     cta: "Aloita nyt",
     featured: true,
   },
   {
-    name: "Kasvu",
-    price: "Räätälöity",
-    description: "Suuremmalle tositemäärälle ja liikevaihdolle.",
+    name: "Pro",
+    price: "318,90 €",
+    period: "/kk",
+    description: "Yrityksille, joilla on suurempi volyymi",
     features: [
-      "Kaikki Starter-paketin edut",
-      "Enemmän tositteita ja suurempi liikevaihto",
-      "Palkanlaskenta ja laskutus",
-      "Verkkokauppa tarvittaessa",
-      "Nimetty asiantuntija",
+      "Henkilökohtainen kirjanpitäjä",
+      "Kirjanpito ja veroilmoitukset",
+      "Räätälöidyt nettisivut + ylläpito",
+      "Domain, hosting ja tietoturva",
+      "WhatsApp-päivitykset",
+      "50–100 tositetta/kk",
+      "3–5 palkanlaskentaa/kk",
+      "Liikevaihto 300 000–500 000 €/vuosi",
     ],
     cta: "Ota yhteyttä",
     featured: false,
@@ -130,7 +139,7 @@ export function Pricing() {
         </div>
 
         <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-white/40">
-          Kaikki paketit sisältävät samat LeoDigitalin nettisivupalvelut — 49 €/kk.
+          Kaikki paketit sisältävät kirjanpidon ja LeoDigitalin nettisivupalvelut samassa hinnassa.
         </p>
       </div>
     </section>
