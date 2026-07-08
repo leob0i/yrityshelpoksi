@@ -24,52 +24,54 @@ export function Navbar() {
   }, [mobileOpen])
 
   return (
-    <motion.nav
-      className="fixed left-0 right-0 top-0 z-50 border-b border-white/5 bg-[#0a0a0a]/80 backdrop-blur-xl"
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-        {/* Logo */}
-        <a href="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-500 to-teal-500">
-            <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
+    <>
+      <motion.nav
+        className="fixed left-0 right-0 top-0 z-50 border-b border-white/5 bg-[#0a0a0a]/80 backdrop-blur-xl"
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
+          {/* Logo */}
+          <a href="/" className="flex items-center gap-2">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-500 to-teal-500">
+              <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span className="text-lg font-bold text-white">Yrityshelpoksi</span>
+          </a>
+
+          {/* Desktop nav */}
+          <div className="hidden items-center gap-8 md:flex">
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className="text-sm text-white/60 transition-colors hover:text-white"
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
-          <span className="text-lg font-bold text-white">Yrityshelpoksi</span>
-        </a>
 
-        {/* Desktop nav */}
-        <div className="hidden items-center gap-8 md:flex">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="text-sm text-white/60 transition-colors hover:text-white"
-            >
-              {link.label}
-            </a>
-          ))}
+          {/* CTA */}
+          <div className="hidden items-center gap-3 md:flex">
+            <Button className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:from-emerald-500 hover:to-teal-500">
+              Aloita nyt
+            </Button>
+          </div>
+
+          {/* Mobile menu button */}
+          <button
+            className="md:hidden text-white/70"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Avaa valikko"
+          >
+            {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
-
-        {/* CTA */}
-        <div className="hidden items-center gap-3 md:flex">
-          <Button className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:from-emerald-500 hover:to-teal-500">
-            Aloita nyt
-          </Button>
-        </div>
-
-        {/* Mobile menu button */}
-        <button
-          className="md:hidden text-white/70"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Avaa valikko"
-        >
-          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
-      </div>
+      </motion.nav>
 
       {/* Mobile menu */}
       <AnimatePresence>
@@ -127,6 +129,6 @@ export function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.nav>
+    </>
   )
 }

@@ -1,6 +1,6 @@
 const footerLinks = {
   Palvelut: ["Taloushallinto", "Kotisivut", "Verkkokaupat", "Hinnat"],
-  Yritys: ["Tietoa meistä", "Blogi", "Ura", "Yhteystiedot"],
+  Yritys: ["Yhteystiedot"],
   Tuki: ["Usein kysytyt", "WhatsApp-tuki", "Ohjeet", "Tila"],
   Lakiasiat: ["Tietosuoja", "Käyttöehdot", "Turvallisuus", "Evästeet"],
 }
