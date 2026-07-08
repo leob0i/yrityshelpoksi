@@ -11,6 +11,7 @@ const plans = [
     period: "/kk",
     description: "Sopii aloittaville yrityksille",
     note: "Aloitusmaksu alk. 99 €",
+    href: "/paketit/starter",
     features: [
       "Henkilökohtainen kirjanpitäjä",
       "Kirjanpito ja veroilmoitukset",
@@ -117,6 +118,14 @@ export function Pricing() {
               </div>
               <p className="mt-2 text-sm text-white/50">{plan.description}</p>
               {plan.note && <p className="mt-2 text-xs text-emerald-400/80">{plan.note}</p>}
+              {plan.href && (
+                <a
+                  href={plan.href}
+                  className="mt-2 inline-block text-xs text-white/40 underline underline-offset-2 transition-colors hover:text-white"
+                >
+                  Katso tarkemmin
+                </a>
+              )}
 
               <ul className="mt-8 space-y-3">
                 {plan.features.map((feature) => (

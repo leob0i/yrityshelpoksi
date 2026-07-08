@@ -6,9 +6,11 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
-  { href: "#palvelut", label: "Palvelut" },
-  { href: "#nain-se-toimii", label: "Näin se toimii" },
-  { href: "#hinnat", label: "Hinnat" },
+  { href: "/paketit/starter", label: "STARTER" },
+  { href: "/#hinnat", label: "MEDIUM" },
+  { href: "/#hinnat", label: "PRO" },
+  { href: "/#nain-se-toimii", label: "Näin se toimii" },
+  { href: "/#hinnat", label: "Hinnat" },
 ]
 
 export function Navbar() {
@@ -23,7 +25,7 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-500 to-teal-500">
             <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -36,7 +38,7 @@ export function Navbar() {
         <div className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <a
-              key={link.href}
+              key={link.label}
               href={link.href}
               className="text-sm text-white/60 transition-colors hover:text-white"
             >
@@ -69,12 +71,12 @@ export function Navbar() {
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
         >
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col items-center gap-6 text-center">
             {navLinks.map((link) => (
               <a
-                key={link.href}
+                key={link.label}
                 href={link.href}
-                className="text-sm text-white/60 transition-colors hover:text-white"
+                className="text-2xl font-bold text-white/80 transition-colors hover:text-white"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
