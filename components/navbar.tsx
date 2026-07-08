@@ -30,7 +30,7 @@ export function Navbar() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
           </div>
-          <span className="text-lg font-bold text-white">LeoDigital</span>
+          <span className="text-lg font-bold text-white">Yrityshelpoksi</span>
         </a>
 
         {/* Desktop nav */}
