@@ -31,19 +31,15 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          {/* Badge */}
-          <motion.div
-            className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-white/80 backdrop-blur-sm"
+          {/* Eyebrow */}
+          <motion.p
+            className="mb-4 text-sm font-semibold uppercase tracking-widest text-emerald-400"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
-            </span>
             Kirjanpito + nettisivut ja verkkokaupat yhdellä sopimuksella
-          </motion.div>
+          </motion.p>
 
           {/* Headline */}
           <motion.h1
@@ -95,30 +91,6 @@ export function Hero() {
                 <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
-          </motion.div>
-
-          {/* Social proof */}
-          <motion.div
-            className="mt-10 flex items-center gap-3"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.6 }}
-          >
-            <div className="flex -space-x-2">
-              {[1, 2, 3].map((i) => (
-                <div
-                  key={i}
-                  className="h-8 w-8 rounded-full border-2 border-[#0a0a0a] bg-gradient-to-br from-emerald-400 to-teal-500"
-                  style={{
-                    backgroundImage: `url(https://i.pravatar.cc/32?img=${i + 10})`,
-                    backgroundSize: "cover",
-                  }}
-                />
-              ))}
-            </div>
-            <span className="text-sm text-white/50">
-              <span className="font-semibold text-white/80">200+</span> yrittäjää luottaa meihin
-            </span>
           </motion.div>
         </motion.div>
 

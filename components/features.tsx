@@ -48,9 +48,6 @@ export function Features() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="mb-4 inline-block rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-1.5 text-sm text-emerald-400">
-            Palvelut
-          </span>
           <h2 className="text-balance text-4xl font-bold tracking-tight text-white sm:text-5xl">
             Kaikki mitä tarvitset{" "}
             <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
