@@ -1,7 +1,7 @@
 "use client"
 
-import { useState } from "react"
-import { motion } from "framer-motion"
+import { useEffect, useState } from "react"
+import { AnimatePresence, motion } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -15,6 +15,13 @@ const navLinks = [
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
+
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? "hidden" : ""
+    return () => {
+      document.body.style.overflow = ""
+    }
+  }, [mobileOpen])
 
   return (
     <motion.nav
@@ -65,31 +72,61 @@ export function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      {mobileOpen && (
-        <motion.div
-          className="border-t border-white/5 bg-[#0a0a0a] px-6 py-4 md:hidden"
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: "auto" }}
-        >
-          <div className="flex flex-col items-center gap-6 text-center">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-2xl font-bold text-white/80 transition-colors hover:text-white"
-                onClick={() => setMobileOpen(false)}
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            className="fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto bg-[#0a0a0a] md:hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            {/* Background grid */}
+            <div
+              className="pointer-events-none absolute inset-0 opacity-20"
+              style={{
+                backgroundImage: `linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                                 linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)`,
+                backgroundSize: "60px 60px",
+              }}
+            />
+            {/* Gradient orbs */}
+            <div className="pointer-events-none absolute -left-32 -top-32 h-96 w-96 rounded-full bg-emerald-600/20 blur-[120px]" />
+            <div className="pointer-events-none absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-teal-600/20 blur-[120px]" />
+
+            <div className="relative flex min-h-full flex-col items-center justify-center gap-8 px-6 py-16">
+              {navLinks.map((link, i) => (
+                <motion.a
+                  key={link.label}
+                  href={link.href}
+                  className="text-3xl font-bold text-white/80 transition-colors hover:text-white sm:text-4xl"
+                  onClick={() => setMobileOpen(false)}
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 16 }}
+                  transition={{ delay: i * 0.06, duration: 0.35 }}
+                >
+                  {link.label}
+                </motion.a>
+              ))}
+              <motion.div
+                className="mt-4 w-full max-w-xs"
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 16 }}
+                transition={{ delay: navLinks.length * 0.06, duration: 0.35 }}
               >
-                {link.label}
-              </a>
-            ))}
-            <div className="flex flex-col gap-2 pt-4 border-t border-white/5">
-              <Button className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 text-white">
-                Aloita nyt
-              </Button>
+                <Button
+                  className="h-12 w-full bg-gradient-to-r from-emerald-600 to-teal-600 text-base font-semibold text-white hover:from-emerald-500 hover:to-teal-500"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Aloita nyt
+                </Button>
+              </motion.div>
             </div>
-          </div>
-        </motion.div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   )
 }
