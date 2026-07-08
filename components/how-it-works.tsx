@@ -57,7 +57,7 @@ export function HowItWorks() {
         {/* Steps */}
         <div className="relative">
           {/* Connection line */}
-          <div className="absolute left-8 top-0 hidden h-full w-px bg-gradient-to-b from-emerald-500/50 via-teal-500/50 to-transparent lg:left-1/2 lg:block lg:-translate-x-px" />
+          <div className="absolute left-8 top-0 h-full w-px bg-gradient-to-b from-emerald-500/50 via-teal-500/50 to-transparent lg:left-1/2 lg:-translate-x-px" />
 
           <div className="space-y-12 lg:space-y-24">
             {steps.map((step, i) => (

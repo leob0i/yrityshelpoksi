@@ -28,6 +28,7 @@ const plans = [
     price: "188,90 €",
     period: "/kk",
     description: "Kasvaville yrityksille",
+    note: "Aloitusmaksu alk. 99 €",
     features: [
       "Henkilökohtainen kirjanpitäjä",
       "Kirjanpito ja veroilmoitukset",
@@ -46,6 +47,7 @@ const plans = [
     price: "318,90 €",
     period: "/kk",
     description: "Yrityksille, joilla on suurempi volyymi",
+    note: "Aloitusmaksu alk. 99 €",
     features: [
       "Henkilökohtainen kirjanpitäjä",
       "Kirjanpito ja veroilmoitukset",

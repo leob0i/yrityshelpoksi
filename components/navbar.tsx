@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button"
 const navLinks = [
   { href: "#palvelut", label: "Palvelut" },
   { href: "#nain-se-toimii", label: "Näin se toimii" },
-  { href: "#asiakkaat", label: "Asiakkaat" },
   { href: "#hinnat", label: "Hinnat" },
 ]
 
@@ -48,9 +47,6 @@ export function Navbar() {
 
         {/* CTA */}
         <div className="hidden items-center gap-3 md:flex">
-          <Button variant="ghost" className="text-white/70 hover:bg-white/5 hover:text-white">
-            Kirjaudu
-          </Button>
           <Button className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:from-emerald-500 hover:to-teal-500">
             Aloita nyt
           </Button>
@@ -85,9 +81,6 @@ export function Navbar() {
               </a>
             ))}
             <div className="flex flex-col gap-2 pt-4 border-t border-white/5">
-              <Button variant="ghost" className="w-full text-white/70 hover:bg-white/5 hover:text-white">
-                Kirjaudu
-              </Button>
               <Button className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 text-white">
                 Aloita nyt
               </Button>
