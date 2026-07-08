@@ -5,48 +5,48 @@ import { motion } from "framer-motion"
 const steps = [
   {
     number: "01",
-    title: "Describe Your Vision",
-    description: "Type what you want to build in plain English. Be as detailed or as simple as you like."
+    title: "Ota yhteyttä",
+    description: "Kerro yrityksestäsi ja tarpeistasi. Kartoitamme tilanteesi ja ehdotamme sopivan paketin.",
   },
   {
     number: "02",
-    title: "AI Generates Code",
-    description: "Our AI understands your intent and generates clean, production-ready React components."
+    title: "Kirjanpito haltuun",
+    description: "Henkilökohtainen kirjanpitäjä ottaa taloushallintosi hoitoon — kirjanpito ja veroilmoitukset hoituvat.",
   },
   {
     number: "03",
-    title: "Iterate & Refine",
-    description: "Chat with the AI to make adjustments. Refine colors, layout, and functionality instantly."
+    title: "Nettisivut käyttöön",
+    description: "LeoDigital rakentaa räätälöidyt nettisivut brändisi mukaan, jotka löytyvät Googlesta ja tekoälyhauista.",
   },
   {
     number: "04",
-    title: "Export & Deploy",
-    description: "Copy the code to your project or deploy directly to Vercel with one click."
-  }
+    title: "Jatkuva tuki",
+    description: "Domain, hosting, tietoturva ja päivitykset hoidetaan puolestasi — muutokset yhdellä WhatsApp-viestillä.",
+  },
 ]
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="relative bg-[#0a0a0a] py-24">
+    <section id="nain-se-toimii" className="relative bg-[#0a0a0a] py-24">
       {/* Gradient accent */}
-      <div className="absolute left-1/2 top-0 h-px w-1/2 -translate-x-1/2 bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent" />
-      
+      <div className="absolute left-1/2 top-0 h-px w-1/2 -translate-x-1/2 bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent" />
+
       <div className="mx-auto max-w-7xl px-6">
         {/* Header */}
-        <motion.div 
+        <motion.div
           className="mb-16 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="mb-4 inline-block rounded-full border border-indigo-500/20 bg-indigo-500/10 px-4 py-1.5 text-sm text-indigo-400">
-            How It Works
+          <span className="mb-4 inline-block rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-1.5 text-sm text-emerald-400">
+            Näin se toimii
           </span>
           <h2 className="text-balance text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            From idea to UI in{" "}
-            <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-              four steps
+            Yrityksesi kuntoon{" "}
+            <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
+              neljässä vaiheessa
             </span>
           </h2>
         </motion.div>
@@ -54,8 +54,8 @@ export function HowItWorks() {
         {/* Steps */}
         <div className="relative">
           {/* Connection line */}
-          <div className="absolute left-8 top-0 hidden h-full w-px bg-gradient-to-b from-indigo-500/50 via-purple-500/50 to-transparent lg:left-1/2 lg:block lg:-translate-x-px" />
-          
+          <div className="absolute left-8 top-0 hidden h-full w-px bg-gradient-to-b from-emerald-500/50 via-teal-500/50 to-transparent lg:left-1/2 lg:block lg:-translate-x-px" />
+
           <div className="space-y-12 lg:space-y-24">
             {steps.map((step, i) => (
               <motion.div
@@ -70,8 +70,8 @@ export function HowItWorks() {
               >
                 {/* Number marker */}
                 <div className="absolute left-0 flex h-16 w-16 items-center justify-center lg:left-1/2 lg:-translate-x-1/2">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full border border-indigo-500/30 bg-[#0a0a0a]">
-                    <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-xl font-bold text-transparent">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full border border-emerald-500/30 bg-[#0a0a0a]">
+                    <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-xl font-bold text-transparent">
                       {step.number}
                     </span>
                   </div>

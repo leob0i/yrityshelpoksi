@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'v0 - Build UI in seconds, not days',
-  description: 'Describe what you want. Get production-ready React + Tailwind instantly.',
+  title: 'LeoDigital — Taloushallinto ja kotisivut samasta',
+  description: 'Henkilökohtainen kirjanpitäjä hoitaa taloushallinnon ja LeoDigital rakentaa nopeat, Googlesta löytyvät nettisivut — kaikki yhdessä paketissa.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="fi" className="bg-[#0a0a0a]">
       <body className="font-sans antialiased">
         {children}
         <Analytics />
