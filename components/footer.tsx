@@ -5,47 +5,49 @@ const footerLinks = {
   Lakiasiat: ["Tietosuoja", "Käyttöehdot", "Turvallisuus", "Evästeet"],
 }
 
-export function Footer() {
+export function Footer({ showPartners = true }: { showPartners?: boolean }) {
   return (
     <footer className="border-t border-white/5 bg-[#0a0a0a]">
       {/* Partners Section */}
-      <div className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid gap-6 sm:grid-cols-2">
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-8">
-            <a
-              href="https://www.leodigital.fi/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3"
-            >
-              <img src="/leodigitallogo.avif" alt="Leo Digital" className="h-10 w-auto" />
-              <h3 className="text-xl font-semibold text-white">Leo Digital</h3>
-            </a>
-            <p className="mt-3 text-white/50">
-              Rakennamme moderneja verkkosivuja, verkkokauppoja ja digitaalisia ratkaisuja
-              yrityksille. Hoidamme suunnittelun, toteutuksen, ylläpidon ja
-              hakukonenäkyvyyden saman katon alta, jotta voit keskittyä liiketoimintaasi.
-            </p>
-          </div>
+      {showPartners && (
+        <div className="mx-auto max-w-7xl px-6 py-16">
+          <div className="grid gap-6 sm:grid-cols-2">
+            <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-8">
+              <a
+                href="https://www.leodigital.fi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3"
+              >
+                <img src="/leodigitallogo.avif" alt="Leo Digital" className="h-10 w-auto" />
+                <h3 className="text-xl font-semibold text-white">Leo Digital</h3>
+              </a>
+              <p className="mt-3 text-white/50">
+                Rakennamme moderneja verkkosivuja, verkkokauppoja ja digitaalisia ratkaisuja
+                yrityksille. Hoidamme suunnittelun, toteutuksen, ylläpidon ja
+                hakukonenäkyvyyden saman katon alta, jotta voit keskittyä liiketoimintaasi.
+              </p>
+            </div>
 
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-8">
-            <a
-              href="https://www.kirjanpitopalvelutrepola.fi/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3"
-            >
-              <img src="/repolalogo.png" alt="Kirjanpitopalvelut Repola" className="h-10 w-auto" />
-              <h3 className="text-xl font-semibold text-white">Kirjanpitopalvelut Repola</h3>
-            </a>
-            <p className="mt-3 text-white/50">
-              Moderni ja täysin digitaalinen tilitoimisto, joka hoitaa kirjanpidon,
-              palkanlaskennan, tilinpäätökset, veroilmoitukset sekä taloushallinnon
-              asiantuntijapalvelut yrityksille helposti ja luotettavasti.
-            </p>
+            <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-8">
+              <a
+                href="https://www.kirjanpitopalvelutrepola.fi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3"
+              >
+                <img src="/repolalogo.png" alt="Kirjanpitopalvelut Repola" className="h-10 w-auto" />
+                <h3 className="text-xl font-semibold text-white">Kirjanpitopalvelut Repola</h3>
+              </a>
+              <p className="mt-3 text-white/50">
+                Moderni ja täysin digitaalinen tilitoimisto, joka hoitaa kirjanpidon,
+                palkanlaskennan, tilinpäätökset, veroilmoitukset sekä taloushallinnon
+                asiantuntijapalvelut yrityksille helposti ja luotettavasti.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Links */}
       <div className="mx-auto max-w-7xl px-6 pb-12">
