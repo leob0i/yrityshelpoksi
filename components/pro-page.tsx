@@ -7,8 +7,9 @@ import { Button } from "@/components/ui/button"
 const sisaltaa = [
   "Henkilökohtainen kirjanpitäjä",
   "Lakisääteinen kirjanpito ja veroilmoitukset",
-  "Tositemäärä 0–20 kpl/kk",
-  "Liikevaihto 0–100k",
+  "Tositemäärä 50–100 kpl/kk",
+  "3–5 palkanlaskentaa/kk",
+  "Liikevaihto 300 000–500 000 €/vuosi",
   "Räätälöidyt nettisivut yrityksesi näköiseksi — ei valmispohjia, ulkoasu ja sisältö tehdään sinun brändisi mukaan",
   "Löydyt Googlesta ja tekoälyhauista — sivut rakennetaan niin, että Google, ChatGPT ja muut hakukoneet suosittelevat sinua",
   "Nopeat ja mobiilioptimoidut sivut — toimii täydellisesti puhelimella, tabletilla ja tietokoneella",
@@ -16,21 +17,22 @@ const sisaltaa = [
   "Päivitykset WhatsAppilla — lähetä viesti, kuva tai uusi tarjous, minä päivitän sivuille",
   "Jatkuva ylläpito ja varmuuskopiot — sivut pysyvät kunnossa ja turvassa ilman että sinun tarvitsee tehdä mitään",
   "Sivut kasvavat mukanasi — ajanvaraus, verkkokauppa tai muut lisäykset onnistuvat myöhemmin ilman uutta projektia",
+  "Useampi kieli, esim. FI/EN/SWE",
+  "5 sähköpostilaatikkoa",
+  "Ajanvarauskalenteri",
+  "Aktiivinen SEO",
+  "Verkkosivuston kehitystoiveet nopeasti WhatsApp-viestillä. Verkkosivustosi kehittyy aktiivisesti yrityksesi ja kilpailun mukana.",
 ]
 
 const addOns = [
   { label: "Tosite", price: "1,50 €/tosite" },
   { label: "Palkanlaskenta", price: "15,90 €/palkanlaskenta" },
   { label: "Tilinpäätös ja muut työt (hakemusten tekeminen ja lähettäminen jne.)", price: "80,00 €/h" },
-  { label: "Sähköpostilaatikko, esim. info@yrityksesi.fi", price: "+5 €/kk / laatikko" },
-  {
-    label: "Verkkokauppa",
-    price: "+29–99 €/kk",
-    note: "Entä maksujen välitys? Kun asiakkaasi maksaa verkkokaupassa, rahaliikenne kulkee maksunvälittäjän kautta (esim. Stripe tai Visma Pay). He veloittavat jokaisesta myynnistä pienen palkkion — yleensä muutama prosentti + kiinteä sentti per tapahtuma, joillakin lisäksi kuukausimaksu. Tämä on alan vakiokäytäntö kaikilla verkkokaupoilla, ja maksat sen suoraan palveluntarjoajalle. Me emme ota siitä osuutta. Autamme sinut valitsemaan sopivimman vaihtoehdon ja kerromme etukäteen mitä se maksaa.",
-  },
+  { label: "Lisäsähköpostit, esim. info@yrityksesi.fi", price: "+5 €/kk / laatikko" },
+  { label: "Verkkokauppa", price: "+39–79 €/kk" },
 ]
 
-export function StarterPage() {
+export function ProPage() {
   return (
     <>
       {/* Header */}
@@ -61,18 +63,18 @@ export function StarterPage() {
           </a>
 
           <span className="mb-4 block w-fit rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-1.5 text-sm text-emerald-400 mx-auto">
-            Starter-paketti
+            Pro-paketti
           </span>
 
           <h1 className="text-balance text-4xl font-bold tracking-tight text-white sm:text-5xl">
             Kirjanpito ja nettisivut{" "}
             <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-              samassa paketissa
+              suuremmalle volyymille
             </span>
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-lg text-white/50">
-            Sopii aloittaville yrityksille. Henkilökohtainen kirjanpitäjä hoitaa taloushallinnon ja rakennamme
-            räätälöidyt nettisivut — kaikki yhdessä sopimuksessa.
+            Yrityksille, joilla on suurempi volyymi. Henkilökohtainen kirjanpitäjä hoitaa taloushallinnon ja
+            rakennamme räätälöidyt nettisivut — kaikki yhdessä sopimuksessa.
           </p>
         </motion.div>
       </section>
@@ -110,7 +112,7 @@ export function StarterPage() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-2xl font-bold text-white">Add-onit</h2>
-            <p className="mt-2 text-white/50">Kasvatatko toimintaasi Starterin puitteissa? Lisää vain tarvitsemasi.</p>
+            <p className="mt-2 text-white/50">Kasvatatko toimintaasi Pron puitteissa? Lisää vain tarvitsemasi.</p>
 
             <ul className="mt-6 divide-y divide-white/5 overflow-hidden rounded-2xl border border-white/5 bg-white/[0.02]">
               {addOns.map((addOn) => (
@@ -119,7 +121,6 @@ export function StarterPage() {
                     <span className="text-sm text-white/70">{addOn.label}</span>
                     <span className="text-sm font-semibold text-emerald-400">{addOn.price}</span>
                   </div>
-                  {addOn.note && <p className="mt-3 text-sm leading-relaxed text-white/40">{addOn.note}</p>}
                 </li>
               ))}
             </ul>
@@ -135,12 +136,9 @@ export function StarterPage() {
           >
             <p className="text-sm text-white/50">Yhteensä</p>
             <p className="mt-2 text-4xl font-bold text-white sm:text-5xl">
-              119,90 € <span className="text-lg font-normal text-white/50">/kk</span>
+              399,90 € <span className="text-lg font-normal text-white/50">/kk</span>
             </p>
-            <p className="mx-auto mt-4 max-w-xl text-sm text-emerald-400/80">
-              Aloitusmaksu alk. 99 € — sisältää 6 sivua sekä tietosuoja- ja käyttöehtosivut. Laajemmat sivustot
-              tai räätälöidyt ominaisuudet hinnoitellaan erikseen, edullinen aloitusmaksu säilyy silti.
-            </p>
+            <p className="mx-auto mt-4 max-w-xl text-sm text-emerald-400/80">Aloitusmaksu alk. 99 €</p>
             <Button
               size="lg"
               className="mt-8 h-12 bg-gradient-to-r from-emerald-600 to-teal-600 px-8 text-base font-semibold text-white hover:from-emerald-500 hover:to-teal-500"

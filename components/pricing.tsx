@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 const plans = [
   {
     name: "Starter",
-    price: "118,90 €",
+    price: "119,90 €",
     period: "/kk",
     description: "Sopii aloittaville yrityksille",
     note: "Aloitusmaksu alk. 99 €",
@@ -26,10 +26,11 @@ const plans = [
   },
   {
     name: "Medium",
-    price: "188,90 €",
+    price: "219,90 €",
     period: "/kk",
     description: "Kasvaville yrityksille",
     note: "Aloitusmaksu alk. 99 €",
+    href: "/paketit/medium",
     features: [
       "Henkilökohtainen kirjanpitäjä",
       "Kirjanpito ja veroilmoitukset",
@@ -45,10 +46,11 @@ const plans = [
   },
   {
     name: "Pro",
-    price: "318,90 €",
+    price: "399,90 €",
     period: "/kk",
     description: "Yrityksille, joilla on suurempi volyymi",
     note: "Aloitusmaksu alk. 99 €",
+    href: "/paketit/pro",
     features: [
       "Henkilökohtainen kirjanpitäjä",
       "Kirjanpito ja veroilmoitukset",

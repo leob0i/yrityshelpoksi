@@ -7,8 +7,9 @@ import { Button } from "@/components/ui/button"
 const sisaltaa = [
   "Henkilökohtainen kirjanpitäjä",
   "Lakisääteinen kirjanpito ja veroilmoitukset",
-  "Tositemäärä 0–20 kpl/kk",
-  "Liikevaihto 0–100k",
+  "Tositemäärä 20–40 kpl/kk",
+  "1–2 palkanlaskentaa/kk",
+  "Liikevaihto 100 000–300 000 €/vuosi",
   "Räätälöidyt nettisivut yrityksesi näköiseksi — ei valmispohjia, ulkoasu ja sisältö tehdään sinun brändisi mukaan",
   "Löydyt Googlesta ja tekoälyhauista — sivut rakennetaan niin, että Google, ChatGPT ja muut hakukoneet suosittelevat sinua",
   "Nopeat ja mobiilioptimoidut sivut — toimii täydellisesti puhelimella, tabletilla ja tietokoneella",
@@ -16,13 +17,17 @@ const sisaltaa = [
   "Päivitykset WhatsAppilla — lähetä viesti, kuva tai uusi tarjous, minä päivitän sivuille",
   "Jatkuva ylläpito ja varmuuskopiot — sivut pysyvät kunnossa ja turvassa ilman että sinun tarvitsee tehdä mitään",
   "Sivut kasvavat mukanasi — ajanvaraus, verkkokauppa tai muut lisäykset onnistuvat myöhemmin ilman uutta projektia",
+  "1 sähköpostilaatikko",
+  "2-kielisyys",
+  "Aktiivinen perus-SEO joka päivityksen yhteydessä",
 ]
 
 const addOns = [
   { label: "Tosite", price: "1,50 €/tosite" },
   { label: "Palkanlaskenta", price: "15,90 €/palkanlaskenta" },
   { label: "Tilinpäätös ja muut työt (hakemusten tekeminen ja lähettäminen jne.)", price: "80,00 €/h" },
-  { label: "Sähköpostilaatikko, esim. info@yrityksesi.fi", price: "+5 €/kk / laatikko" },
+  { label: "Muut Fennoa-kulut", price: "Laskutetaan erikseen" },
+  { label: "Lisäsähköpostit, esim. info@yrityksesi.fi", price: "+5 €/kk / laatikko" },
   {
     label: "Verkkokauppa",
     price: "+29–99 €/kk",
@@ -30,7 +35,7 @@ const addOns = [
   },
 ]
 
-export function StarterPage() {
+export function MediumPage() {
   return (
     <>
       {/* Header */}
@@ -61,17 +66,17 @@ export function StarterPage() {
           </a>
 
           <span className="mb-4 block w-fit rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-1.5 text-sm text-emerald-400 mx-auto">
-            Starter-paketti
+            Medium-paketti
           </span>
 
           <h1 className="text-balance text-4xl font-bold tracking-tight text-white sm:text-5xl">
             Kirjanpito ja nettisivut{" "}
             <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-              samassa paketissa
+              kasvavalle yritykselle
             </span>
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-lg text-white/50">
-            Sopii aloittaville yrityksille. Henkilökohtainen kirjanpitäjä hoitaa taloushallinnon ja rakennamme
+            Sopii kasvaville yrityksille. Henkilökohtainen kirjanpitäjä hoitaa taloushallinnon ja rakennamme
             räätälöidyt nettisivut — kaikki yhdessä sopimuksessa.
           </p>
         </motion.div>
@@ -110,7 +115,7 @@ export function StarterPage() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-2xl font-bold text-white">Add-onit</h2>
-            <p className="mt-2 text-white/50">Kasvatatko toimintaasi Starterin puitteissa? Lisää vain tarvitsemasi.</p>
+            <p className="mt-2 text-white/50">Kasvatatko toimintaasi Mediumin puitteissa? Lisää vain tarvitsemasi.</p>
 
             <ul className="mt-6 divide-y divide-white/5 overflow-hidden rounded-2xl border border-white/5 bg-white/[0.02]">
               {addOns.map((addOn) => (
@@ -135,10 +140,10 @@ export function StarterPage() {
           >
             <p className="text-sm text-white/50">Yhteensä</p>
             <p className="mt-2 text-4xl font-bold text-white sm:text-5xl">
-              119,90 € <span className="text-lg font-normal text-white/50">/kk</span>
+              219,90 € <span className="text-lg font-normal text-white/50">/kk</span>
             </p>
             <p className="mx-auto mt-4 max-w-xl text-sm text-emerald-400/80">
-              Aloitusmaksu alk. 99 € — sisältää 6 sivua sekä tietosuoja- ja käyttöehtosivut. Laajemmat sivustot
+              Aloitusmaksu alk. 99 € — sisältää 8 sivua sekä tietosuoja- ja käyttöehtosivut. Laajemmat sivustot
               tai räätälöidyt ominaisuudet hinnoitellaan erikseen, edullinen aloitusmaksu säilyy silti.
             </p>
             <Button
