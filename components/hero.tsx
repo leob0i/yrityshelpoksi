@@ -84,8 +84,9 @@ export function Hero() {
             <Button
               size="lg"
               className="h-12 bg-gradient-to-r from-emerald-600 to-teal-600 px-8 text-base font-semibold text-white hover:from-emerald-500 hover:to-teal-500"
+              asChild
             >
-              Pyydä tarjous
+              <a href="/yhteys">Pyydä tarjous</a>
             </Button>
             <Button
               variant="ghost"

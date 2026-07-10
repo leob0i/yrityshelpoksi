@@ -57,8 +57,11 @@ export function Navbar() {
 
           {/* CTA */}
           <div className="hidden items-center gap-3 md:flex">
-            <Button className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:from-emerald-500 hover:to-teal-500">
-              Aloita nyt
+            <Button
+              className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:from-emerald-500 hover:to-teal-500"
+              asChild
+            >
+              <a href="/yhteys">Ota yhteyttä</a>
             </Button>
           </div>
 
@@ -120,9 +123,11 @@ export function Navbar() {
               >
                 <Button
                   className="h-12 w-full bg-gradient-to-r from-emerald-600 to-teal-600 text-base font-semibold text-white hover:from-emerald-500 hover:to-teal-500"
-                  onClick={() => setMobileOpen(false)}
+                  asChild
                 >
-                  Aloita nyt
+                  <a href="/yhteys" onClick={() => setMobileOpen(false)}>
+                    Ota yhteyttä
+                  </a>
                 </Button>
               </motion.div>
             </div>

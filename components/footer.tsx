@@ -1,8 +1,20 @@
 const footerLinks = {
-  Palvelut: ["Taloushallinto", "Kotisivut", "Verkkokaupat", "Hinnat"],
-  Yritys: ["Yhteystiedot"],
-  Tuki: ["Usein kysytyt", "WhatsApp-tuki", "Ohjeet", "Tila"],
-  Lakiasiat: ["Tietosuoja", "Käyttöehdot", "Turvallisuus", "Evästeet"],
+  Palvelut: [
+    { label: "Taloushallinto", href: "#" },
+    { label: "Kotisivut", href: "#" },
+    { label: "Verkkokaupat", href: "#" },
+    { label: "Hinnat", href: "/#hinnat" },
+  ],
+  Tuki: [
+    { label: "Usein kysytyt", href: "/#ukk" },
+    { label: "Yhteys", href: "/yhteys" },
+  ],
+  Lakiasiat: [
+    { label: "Tietosuoja", href: "#" },
+    { label: "Käyttöehdot", href: "#" },
+    { label: "Turvallisuus", href: "#" },
+    { label: "Evästeet", href: "#" },
+  ],
 }
 
 export function Footer({ showPartners = true }: { showPartners?: boolean }) {
@@ -51,7 +63,7 @@ export function Footer({ showPartners = true }: { showPartners?: boolean }) {
 
       {/* Links */}
       <div className="mx-auto max-w-7xl px-6 pb-12">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
             <a href="#" className="flex items-center gap-2">
@@ -73,9 +85,9 @@ export function Footer({ showPartners = true }: { showPartners?: boolean }) {
               <h4 className="mb-4 text-sm font-semibold text-white">{title}</h4>
               <ul className="space-y-2">
                 {links.map((link) => (
-                  <li key={link}>
-                    <a href="#" className="text-sm text-white/40 transition-colors hover:text-white">
-                      {link}
+                  <li key={link.label}>
+                    <a href={link.href} className="text-sm text-white/40 transition-colors hover:text-white">
+                      {link.label}
                     </a>
                   </li>
                 ))}
