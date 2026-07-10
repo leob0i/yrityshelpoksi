@@ -38,6 +38,11 @@ export function ProPage() {
       {/* Header */}
       <section className="relative overflow-hidden bg-[#0a0a0a] pt-32 pb-16">
         <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/nettikauppa.maksu.jpg')" }}
+        />
+        <div className="absolute inset-0 bg-[#0a0a0a]/70" />
+        <div
           className="absolute inset-0 opacity-20"
           style={{
             backgroundImage: `linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),

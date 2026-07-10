@@ -8,6 +8,13 @@ import { CodeEditor } from "./code-editor"
 export function Hero() {
   return (
     <section className="relative min-h-screen w-full overflow-hidden bg-[#0a0a0a]">
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('/lasitalot.jpg')" }}
+      />
+      <div className="absolute inset-0 bg-[#0a0a0a]/70" />
+
       {/* Background grid */}
       <div
         className="absolute inset-0 opacity-20"
