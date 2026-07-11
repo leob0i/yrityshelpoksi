@@ -9,7 +9,6 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'LeoDigital — Taloushallinto ja kotisivut samasta',
   description: 'Henkilökohtainen kirjanpitäjä hoitaa taloushallinnon ja LeoDigital rakentaa nopeat, Googlesta löytyvät nettisivut — kaikki yhdessä paketissa.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
