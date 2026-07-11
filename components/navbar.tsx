@@ -33,13 +33,8 @@ export function Navbar() {
       >
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-500 to-teal-500">
-              <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-            </div>
-            <span className="text-lg font-bold text-white">Yrityshelpoksi</span>
+          <a href="/" className="flex items-center">
+            <img src="/logo_horizontal_transparent.png" alt="Kirjanpito ja Digitoimisto — Apell x Repola" className="h-12 w-auto" />
           </a>
 
           {/* Desktop nav */}
