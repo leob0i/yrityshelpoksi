@@ -14,7 +14,6 @@ const sisaltaa = [
   "Löydyt Googlesta ja tekoälyhauista — sivut rakennetaan niin, että Google, ChatGPT ja muut hakukoneet suosittelevat sinua",
   "Nopeat ja mobiilioptimoidut sivut — toimii täydellisesti puhelimella, tabletilla ja tietokoneella",
   "Domain, hosting ja tietoturva hoidettu — ei erillisiä laskuja tai palveluntarjoajia, kaikki samassa",
-  "Päivitykset WhatsAppilla — lähetä viesti, kuva tai uusi tarjous, minä päivitän sivuille",
   "Jatkuva ylläpito ja varmuuskopiot — sivut pysyvät kunnossa ja turvassa ilman että sinun tarvitsee tehdä mitään",
   "Sivut kasvavat mukanasi — ajanvaraus, verkkokauppa tai muut lisäykset onnistuvat myöhemmin ilman uutta projektia",
   "Useampi kieli, esim. FI/EN/SWE",
@@ -29,7 +28,11 @@ const addOns = [
   { label: "Palkanlaskenta", price: "15,90 €/palkanlaskenta" },
   { label: "Tilinpäätös ja muut työt (hakemusten tekeminen ja lähettäminen jne.)", price: "80,00 €/h" },
   { label: "Lisäsähköpostit, esim. info@yrityksesi.fi", price: "+5 €/kk / laatikko" },
-  { label: "Verkkokauppa", price: "+39–79 €/kk" },
+  {
+    label: "Verkkokauppa",
+    price: "+39–79 €/kk",
+    note: "Entä maksujen välitys? Kun asiakkaasi maksaa verkkokaupassa, rahaliikenne kulkee maksunvälittäjän kautta (esim. Stripe tai Visma Pay). He veloittavat jokaisesta myynnistä pienen palkkion — yleensä muutama prosentti + kiinteä sentti per tapahtuma, joillakin lisäksi kuukausimaksu. Tämä on alan vakiokäytäntö kaikilla verkkokaupoilla, ja maksat sen suoraan palveluntarjoajalle. Me emme ota siitä osuutta. Autamme sinut valitsemaan sopivimman vaihtoehdon ja kerromme etukäteen mitä se maksaa.",
+  },
 ]
 
 export function ProPage() {
@@ -106,6 +109,15 @@ export function ProPage() {
                 </li>
               ))}
             </ul>
+
+            <div className="mt-8 border-t border-white/5 pt-6">
+              <h3 className="text-lg font-semibold text-white">Yhteydenpito ja muutokset</h3>
+              <p className="mt-2 text-sm leading-relaxed text-white/50">
+                Saat meihin nopeasti yhteyden vuoden jokaisena päivänä ja nettisivun pienet päivitykset WhatsAppilla
+                kerran kuukaudessa. — lähetä viestillä uusi kuva, tarjous tai muutos ja me päivitämme sivut. (sisältää
+                noin 2h päivitystyötä, kaikki ylimenevä laskutetaan 30€/h). Pro-pakettiin kuuluu prioriteetti tuki niin taloushallinnon ja nettisivujen puolella. 
+              </p>
+            </div>
           </motion.div>
 
           {/* Add-ons */}
@@ -126,6 +138,7 @@ export function ProPage() {
                     <span className="text-sm text-white/70">{addOn.label}</span>
                     <span className="text-sm font-semibold text-emerald-400">{addOn.price}</span>
                   </div>
+                  {addOn.note && <p className="mt-3 text-sm leading-relaxed text-white/40">{addOn.note}</p>}
                 </li>
               ))}
             </ul>

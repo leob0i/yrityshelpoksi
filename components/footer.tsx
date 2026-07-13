@@ -94,7 +94,7 @@ export function Footer({ showPartners = true }: { showPartners?: boolean }) {
         {/* Bottom */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-8 sm:flex-row">
           <p className="text-sm text-white/40">
-            &copy; {new Date().getFullYear()} LeoDigital. Kaikki oikeudet pidätetään.
+            &copy; 2026 Apell x Repola Kaikki oikeudet pidätetään.
           </p>
           <div className="flex gap-4">
             <a href="#" aria-label="X (Twitter)" className="text-white/40 transition-colors hover:text-white">

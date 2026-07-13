@@ -9,11 +9,10 @@ const sisaltaa = [
   "Lakisääteinen kirjanpito ja veroilmoitukset",
   "Tositemäärä 0–20 kpl/kk",
   "Liikevaihto 0–100k",
-  "Räätälöidyt nettisivut yrityksesi näköiseksi — ei valmispohjia, ulkoasu ja sisältö tehdään sinun brändisi mukaan",
-  "Löydyt Googlesta ja tekoälyhauista — sivut rakennetaan niin, että Google, ChatGPT ja muut hakukoneet suosittelevat sinua",
+  "Räätälöidyt nettisivut yrityksesi näköiseksi — ulkoasu ja sisältö tehdään sinun brändisi mukaan",
+  "Löydyt Googlesta ja tekoälyhauista — sivut rakennetaan niin, että Google, ChatGPT ja muut hakukoneet löytävät sinut",
   "Nopeat ja mobiilioptimoidut sivut — toimii täydellisesti puhelimella, tabletilla ja tietokoneella",
-  "Domain, hosting ja tietoturva hoidettu — ei erillisiä laskuja tai palveluntarjoajia, kaikki samassa",
-  "Päivitykset WhatsAppilla — lähetä viesti, kuva tai uusi tarjous, minä päivitän sivuille",
+  "Domain, hosting ja tietoturva hoidettu — ei erillisiä laskuja tai palveluntarjoajia, kaikki samasta",
   "Jatkuva ylläpito ja varmuuskopiot — sivut pysyvät kunnossa ja turvassa ilman että sinun tarvitsee tehdä mitään",
   "Sivut kasvavat mukanasi — ajanvaraus, verkkokauppa tai muut lisäykset onnistuvat myöhemmin ilman uutta projektia",
 ]
@@ -104,6 +103,15 @@ export function StarterPage() {
                 </li>
               ))}
             </ul>
+
+            <div className="mt-8 border-t border-white/5 pt-6">
+              <h3 className="text-lg font-semibold text-white">Yhteydenpito ja muutokset</h3>
+              <p className="mt-2 text-sm leading-relaxed text-white/50">
+                Saat meihin nopeasti yhteyden vuoden jokaisena päivänä ja nettisivun pienet päivitykset WhatsAppilla
+                kerran kuukaudessa. — lähetä viestillä uusi kuva, tarjous tai muutos ja me päivitämme sivut. (sisältää
+                noin 1h päivitystyötä, kaikki ylimenevä laskutetaan 30€/h).
+              </p>
+            </div>
           </motion.div>
 
           {/* Add-ons */}

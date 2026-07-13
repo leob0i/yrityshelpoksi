@@ -61,7 +61,7 @@ const plans = [
       "3–5 palkanlaskentaa/kk",
       "Liikevaihto 300 000–500 000 €/vuosi",
     ],
-    cta: "Ota yhteyttä",
+    cta: "Aloita nyt",
     featured: false,
   },
 ]
@@ -139,13 +139,14 @@ export function Pricing() {
               </ul>
 
               <Button
+                asChild
                 className={`mt-8 w-full ${
                   plan.featured
                     ? "bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:from-emerald-500 hover:to-teal-500"
                     : "border border-white/10 bg-white/5 text-white hover:bg-white/10"
                 }`}
               >
-                {plan.cta}
+                <a href="/yhteys">{plan.cta}</a>
               </Button>
             </motion.div>
           ))}

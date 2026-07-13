@@ -17,7 +17,7 @@ const features = [
   {
     icon: ShoppingCart,
     title: "Verkkokaupat",
-    description: "Toimiva verkkokauppa maksuineen ja tuotehallintoineen — myy tuotteitasi verkossa vaivattomasti.",
+    description: "Toimiva verkkokauppa helposti ja nopeasti pystyyn puolestasi — myy tuotteitasi verkossa vaivattomasti.",
   },
   {
     icon: MessageCircle,
