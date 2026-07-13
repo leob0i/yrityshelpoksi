@@ -81,8 +81,9 @@ export function ProPage() {
             </span>
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-lg text-white/50">
-            Yrityksille, joilla on suurempi volyymi. Henkilökohtainen kirjanpitäjä hoitaa taloushallinnon ja
-            rakennamme räätälöidyt nettisivut — kaikki yhdessä sopimuksessa.
+            Pro on rakennettu vakiintuneelle yritykselle, jonka tositemäärä ja palkanlaskenta ovat suurempia.
+            Saat monikieliset nettisivut ajanvarauskalenterilla sekä prioriteettituen sekä taloushallinnon että
+            nettisivujen puolella.
           </p>
         </motion.div>
       </section>

@@ -34,7 +34,7 @@ export function Navbar() {
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
           {/* Logo */}
           <a href="/" className="flex items-center">
-            <img src="/logo_horizontal_transparent.png" alt="Kirjanpito ja Digitoimisto — Apell x Repola" className="h-12 w-auto" />
+            <img src="/logo_horizontal_transparent.png" alt="Kirjanpito ja Digitoimisto Apell x Repola" className="h-12 w-auto" />
           </a>
 
           {/* Desktop nav */}

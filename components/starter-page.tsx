@@ -36,9 +36,9 @@ export function StarterPage() {
       <section className="relative overflow-hidden bg-[#0a0a0a] pt-32 pb-16">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/nettikauppa.maksu.jpg')" }}
+          style={{ backgroundImage: "url('/rahatjanettisivu.webp')" }}
         />
-        <div className="absolute inset-0 bg-[#0a0a0a]/70" />
+        <div className="absolute inset-0 bg-[#0a0a0a]/60" />
         <div
           className="absolute inset-0 opacity-20"
           style={{
@@ -75,8 +75,9 @@ export function StarterPage() {
             </span>
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-lg text-white/50">
-            Sopii aloittaville yrityksille. Henkilökohtainen kirjanpitäjä hoitaa taloushallinnon ja rakennamme
-            räätälöidyt nettisivut — kaikki yhdessä sopimuksessa.
+            Starter on suunniteltu aloittavalle yrittäjälle ja toiminimelle, jolle tämä on usein ensimmäinen
+            tilitoimisto ja ensimmäiset omat nettisivut. Hoidamme kirjanpidon ja verkkonäkyvyyden alusta asti
+            kuntoon, jotta voit keskittyä huolettomasti liiketoiminnan käynnistämiseen.
           </p>
         </motion.div>
       </section>

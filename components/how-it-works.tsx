@@ -18,7 +18,7 @@ const steps = [
     number: "03",
     title: "Nettisivut käyttöön",
     description:
-      "LeoDigital rakentaa räätälöidyt nettisivut brändisi mukaan, jotka löytyvät Googlesta ja tekoälyhauista. Niiden tarkoitus on helpottaa liiketoimintaasi ja tuoda sinut näkyville. Jatkuva ylläpito sekä domain, hosting, tietoturva ja päivitykset hoidetaan puolestasi — muutokset yhdellä WhatsApp-viestillä.",
+      "Räätälöidyt nettisivut brändisi mukaan, jotka löytyvät Googlesta ja tekoälyhauista. Niiden tarkoitus on helpottaa liketoimintaasi ja tuoda sinut näkyville. Jatkuva ylläpito, hosting, tietoturva ja päivitykset samasta.",
   },
   {
     number: "04",

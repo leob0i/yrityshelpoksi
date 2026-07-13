@@ -80,8 +80,9 @@ export function MediumPage() {
             </span>
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-lg text-white/50">
-            Sopii kasvaville yrityksille. Henkilökohtainen kirjanpitäjä hoitaa taloushallinnon ja rakennamme
-            räätälöidyt nettisivut — kaikki yhdessä sopimuksessa.
+            Medium on tehty kasvavalle yritykselle, jolla on jo työntekijöitä ja palkanlaskennan tarpeita.
+            Nettisivusi toimivat kaksikielisesti ja niitä kehitetään aktiivisemman hakukoneoptimoinnin (SEO) avulla,
+            jotta näkyvyytesi kasvaa liiketoimintasi mukana.
           </p>
         </motion.div>
       </section>

@@ -67,7 +67,7 @@ export function Footer({ showPartners = true }: { showPartners?: boolean }) {
           {/* Brand */}
           <div className="lg:col-span-1">
             <a href="#" className="flex items-center">
-              <img src="/logo_horizontal_transparent.png" alt="Kirjanpito ja Digitoimisto — Apell x Repola" className="h-14 w-auto" />
+              <img src="/logo_horizontal_transparent.png" alt="Kirjanpito ja Digitoimisto Apell x Repola" className="h-14 w-auto" />
             </a>
             <p className="mt-4 text-sm text-white/40">
               Taloushallinto ja kotisivut samasta.
@@ -94,7 +94,7 @@ export function Footer({ showPartners = true }: { showPartners?: boolean }) {
         {/* Bottom */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-8 sm:flex-row">
           <p className="text-sm text-white/40">
-            &copy; 2026 Apell x Repola Kaikki oikeudet pidätetään.
+            &copy; 2026 Kirjanpito ja Digitoimisto Apell x Repola. Kaikki oikeudet pidätetään.
           </p>
           <div className="flex gap-4">
             <a href="#" aria-label="X (Twitter)" className="text-white/40 transition-colors hover:text-white">

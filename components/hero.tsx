@@ -69,9 +69,9 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
-            Henkilökohtainen kirjanpitäjä hoitaa taloushallinnon ja LeoDigital
-            rakentaa nopeat, Googlesta löytyvät nettisivut — kaikki yhdessä
-            paketissa.
+            Henkilökohtainen kirjanpitäjä hoitaa taloushallintosi ja me rakennamme
+            nettisivut, jotka löytyvät Googlesta ja tekoälyhauista. Yksi sopimus,
+            yksi lasku — sinä keskityt yrittämiseen.
           </motion.p>
 
           {/* CTA Buttons */}

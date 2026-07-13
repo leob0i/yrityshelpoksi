@@ -1,9 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { WHATSAPP_NUMBER } from "@/lib/site-config"
 
-// Vaihda numero omaan WhatsApp-numeroosi (kansainvälinen muoto ilman +).
-const WHATSAPP_NUMBER = "358401234567"
 const MESSAGE = "Hei! Haluaisin kuulla lisää taloushallinnon ja nettisivujen paketeista."
 
 export function WhatsAppButton() {

@@ -153,7 +153,7 @@ export function Pricing() {
         </div>
 
         <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-white/40">
-          Kaikki paketit sisältävät kirjanpidon ja LeoDigitalin nettisivupalvelut samassa hinnassa.
+          Kaikki paketit sisältävät kirjanpidon ja nettisivupalvelut samassa hinnassa.
         </p>
       </div>
     </section>
