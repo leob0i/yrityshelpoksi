@@ -1,27 +1,32 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { MessageCircle, Calculator, Globe, Handshake } from "lucide-react"
 
 const steps = [
   {
     number: "01",
+    icon: MessageCircle,
     title: "Ota yhteyttä",
     description: "Kerro yrityksestäsi ja tarpeistasi. Kartoitamme tilanteesi ja ehdotamme sopivan paketin.",
   },
   {
     number: "02",
+    icon: Calculator,
     title: "Kirjanpito haltuun",
     description:
       "Henkilökohtainen kirjanpitäjä ottaa taloushallintosi hoitoon — kirjanpito ja veroilmoitukset hoituvat ajallaan lainmukaisesti ja oikein.",
   },
   {
     number: "03",
+    icon: Globe,
     title: "Nettisivut käyttöön",
     description:
       "Räätälöidyt nettisivut brändisi mukaan, jotka löytyvät Googlesta ja tekoälyhauista. Niiden tarkoitus on helpottaa liketoimintaasi ja tuoda sinut näkyville. Jatkuva ylläpito, hosting, tietoturva ja päivitykset samasta.",
   },
   {
     number: "04",
+    icon: Handshake,
     title: "Jatkuva tuki",
     description:
       "Kaikki mitä tarvitset menestyvään yritykseesi niin taloudellisesti ja digitaalisesti arkeasi helpottaen. Saat jatkuvan tuen kirjanpitäjältäsi sekä muutokset kotisivuille tai verkkokauppaan helposti ja nopeasti yhdellä WhatsApp-viestillä.",
@@ -30,9 +35,17 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="nain-se-toimii" className="relative bg-[#0a0a0a] py-24">
+    <section id="nain-se-toimii" className="relative overflow-hidden bg-[#0a0a0a] py-24">
       {/* Gradient accent */}
       <div className="absolute left-1/2 top-0 h-px w-1/2 -translate-x-1/2 bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent" />
+
+      {/* Logo watermark */}
+      <img
+        src="/logo_horizontal_transparent.png"
+        alt=""
+        aria-hidden="true"
+        className="pointer-events-none absolute left-1/2 top-1/2 w-[120%] max-w-none -translate-x-1/2 -translate-y-1/2 opacity-[0.05] sm:w-[70%]"
+      />
 
       <div className="mx-auto max-w-7xl px-6">
         {/* Header */}
@@ -82,7 +95,14 @@ export function HowItWorks() {
 
                 {/* Content */}
                 <div className={`flex-1 pl-24 lg:pl-0 ${i % 2 === 0 ? "lg:pr-24 lg:text-right" : "lg:pl-24"}`}>
-                  <h3 className="mb-2 text-2xl font-semibold text-white">{step.title}</h3>
+                  <h3
+                    className={`mb-2 flex items-center gap-2 text-2xl font-semibold text-white ${
+                      i % 2 === 0 ? "lg:flex-row-reverse" : ""
+                    }`}
+                  >
+                    <step.icon className="h-6 w-6 shrink-0 text-emerald-400" />
+                    {step.title}
+                  </h3>
                   <p className="text-white/50">{step.description}</p>
                 </div>
 
