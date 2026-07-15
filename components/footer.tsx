@@ -24,38 +24,70 @@ export function Footer({ showPartners = true }: { showPartners?: boolean }) {
       {showPartners && (
         <div className="mx-auto max-w-7xl px-6 py-16">
           <div className="grid gap-6 sm:grid-cols-2">
-            <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-8">
-              <a
-                href="https://www.leodigital.fi/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3"
-              >
-                <img src="/leodigitallogo.avif" alt="Leo Digital" className="h-10 w-auto" />
-                <h3 className="text-xl font-semibold text-white">Leo Digital</h3>
-              </a>
-              <p className="mt-3 text-white/50">
-                Rakennamme moderneja verkkosivuja, verkkokauppoja ja digitaalisia ratkaisuja
-                yrityksille. Hoidamme suunnittelun, toteutuksen, ylläpidon ja
-                hakukonenäkyvyyden saman katon alta, jotta voit keskittyä liiketoimintaasi.
-              </p>
+            <div className="relative overflow-hidden rounded-2xl border border-white/10 p-8">
+              <img
+                src="/repolanettisivu.jpeg"
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/95 via-[#0a0a0a]/60 to-[#0a0a0a]/25" />
+              <div className="relative">
+                <a
+                  href="https://www.leodigital.fi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3"
+                >
+                  <img src="/leodigitallogo.avif" alt="Leo Digital" className="h-10 w-auto drop-shadow-lg" />
+                  <h3 className="text-xl font-semibold text-white drop-shadow-lg">Leo Digital</h3>
+                </a>
+                <p className="mt-3 rounded-lg bg-black/50 p-3 text-white/90 backdrop-blur-sm">
+                  Rakennamme moderneja verkkosivuja, verkkokauppoja ja digitaalisia ratkaisuja
+                  yrityksille. Hoidamme suunnittelun, toteutuksen, ylläpidon ja
+                  hakukonenäkyvyyden saman katon alta, jotta voit keskittyä liiketoimintaasi.
+                </p>
+                <a
+                  href="https://www.leodigital.fi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex items-center rounded-full bg-white px-5 py-2 text-sm font-semibold text-[#0a0a0a] transition-colors hover:bg-white/90"
+                >
+                  Vieraile sivulla
+                </a>
+              </div>
             </div>
 
-            <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-8">
-              <a
-                href="https://www.kirjanpitopalvelutrepola.fi/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3"
-              >
-                <img src="/repolalogo.png" alt="Kirjanpitopalvelut Repola" className="h-10 w-auto" />
-                <h3 className="text-xl font-semibold text-white">Kirjanpitopalvelut Repola</h3>
-              </a>
-              <p className="mt-3 text-white/50">
-                Moderni ja täysin digitaalinen tilitoimisto, joka hoitaa kirjanpidon,
-                palkanlaskennan, tilinpäätökset, veroilmoitukset sekä taloushallinnon
-                asiantuntijapalvelut yrityksille helposti ja luotettavasti.
-              </p>
+            <div className="relative overflow-hidden rounded-2xl border border-white/10 p-8">
+              <img
+                src="/leodigitalnettsivu.jpeg"
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/95 via-[#0a0a0a]/60 to-[#0a0a0a]/25" />
+              <div className="relative">
+                <a
+                  href="https://www.kirjanpitopalvelutrepola.fi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3"
+                >
+                  <img src="/repolalogo.png" alt="Kirjanpitopalvelut Repola" className="h-10 w-auto drop-shadow-lg" />
+                  <h3 className="text-xl font-semibold text-white drop-shadow-lg">Kirjanpitopalvelut Repola</h3>
+                </a>
+                <p className="mt-3 rounded-lg bg-black/50 p-3 text-white/90 backdrop-blur-sm">
+                  Moderni ja täysin digitaalinen tilitoimisto, joka hoitaa kirjanpidon,
+                  palkanlaskennan, tilinpäätökset, veroilmoitukset sekä taloushallinnon
+                  asiantuntijapalvelut yrityksille helposti ja luotettavasti.
+                </p>
+                <a
+                  href="https://www.kirjanpitopalvelutrepola.fi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex items-center rounded-full bg-white px-5 py-2 text-sm font-semibold text-[#0a0a0a] transition-colors hover:bg-white/90"
+                >
+                  Vieraile sivulla
+                </a>
+              </div>
             </div>
           </div>
         </div>

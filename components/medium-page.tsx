@@ -1,15 +1,18 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowLeft, Check } from "lucide-react"
+import { ArrowLeft, Calculator, Check, Globe, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-const sisaltaa = [
+const kirjanpito = [
   "Henkilökohtainen kirjanpitäjä",
   "Lakisääteinen kirjanpito ja veroilmoitukset",
   "Tositemäärä 20–40 kpl/kk",
   "1–2 palkanlaskentaa/kk",
   "Liikevaihto 100 000–300 000 €/vuosi",
+]
+
+const nettisivut = [
   "Räätälöidyt nettisivut yrityksesi näköiseksi — ei valmispohjia, ulkoasu ja sisältö tehdään sinun brändisi mukaan",
   "Löydyt Googlesta ja tekoälyhauista — sivut rakennetaan niin, että Google, ChatGPT ja muut hakukoneet suosittelevat sinua",
   "Nopeat ja mobiilioptimoidut sivut — toimii täydellisesti puhelimella, tabletilla ja tietokoneella",
@@ -101,17 +104,42 @@ export function MediumPage() {
             <p className="mt-2 text-white/50">
               Taloushallinto ja nettisivut yhtenä kokonaisuutena — ei erillisiä sopimuksia tai laskuja.
             </p>
-            <ul className="mt-8 grid gap-x-8 gap-y-4 sm:grid-cols-2">
-              {sisaltaa.map((item) => (
-                <li key={item} className="flex items-start gap-3 text-sm text-white/70">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />
-                  {item}
-                </li>
-              ))}
-            </ul>
+            <div className="mt-8 grid gap-8 sm:grid-cols-2">
+              <div>
+                <h3 className="flex items-center gap-2 text-lg font-semibold text-white">
+                  <Calculator className="h-5 w-5 text-orange-400" />
+                  Kirjanpito
+                </h3>
+                <ul className="mt-4 space-y-4">
+                  {kirjanpito.map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-sm text-white/70">
+                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="flex items-center gap-2 text-lg font-semibold text-white">
+                  <Globe className="h-5 w-5 text-blue-400" />
+                  Nettisivut
+                </h3>
+                <ul className="mt-4 space-y-4">
+                  {nettisivut.map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-sm text-white/70">
+                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
 
             <div className="mt-8 border-t border-white/5 pt-6">
-              <h3 className="text-lg font-semibold text-white">Yhteydenpito ja muutokset</h3>
+              <h3 className="flex items-center gap-2 text-lg font-semibold text-white">
+                <MessageCircle className="h-5 w-5 text-green-400" />
+                Yhteydenpito ja muutokset
+              </h3>
               <p className="mt-2 text-sm leading-relaxed text-white/50">
                 Saat meihin nopeasti yhteyden vuoden jokaisena päivänä ja nettisivun pienet päivitykset WhatsAppilla
                 kerran kuukaudessa. — lähetä viestillä uusi kuva, tarjous tai muutos ja me päivitämme sivut. (sisältää
