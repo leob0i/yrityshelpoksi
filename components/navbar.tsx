@@ -100,7 +100,7 @@ export function Navbar() {
                   key={link.label}
                   href={link.href}
                   className={`text-3xl font-bold text-white/80 transition-colors hover:text-white sm:text-4xl ${
-                    link.mono ? "font-mono uppercase" : ""
+                    link.mono ? "font-mono uppercase font-black tracking-tight text-white text-5xl sm:text-6xl" : ""
                   }`}
                   onClick={() => setMobileOpen(false)}
                   initial={{ opacity: 0, y: 16 }}
