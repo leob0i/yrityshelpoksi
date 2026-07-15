@@ -6,9 +6,9 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
-  { href: "/paketit/starter", label: "STARTER" },
-  { href: "/paketit/medium", label: "MEDIUM" },
-  { href: "/paketit/pro", label: "PRO" },
+  { href: "/paketit/starter", label: "STARTER", mono: true },
+  { href: "/paketit/medium", label: "MEDIUM", mono: true },
+  { href: "/paketit/pro", label: "PRO", mono: true },
   { href: "/#nain-se-toimii", label: "Näin se toimii" },
   { href: "/#hinnat", label: "Hinnat" },
 ]
@@ -99,7 +99,9 @@ export function Navbar() {
                 <motion.a
                   key={link.label}
                   href={link.href}
-                  className="text-3xl font-bold text-white/80 transition-colors hover:text-white sm:text-4xl"
+                  className={`text-3xl font-bold text-white/80 transition-colors hover:text-white sm:text-4xl ${
+                    link.mono ? "font-mono uppercase" : ""
+                  }`}
                   onClick={() => setMobileOpen(false)}
                   initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}

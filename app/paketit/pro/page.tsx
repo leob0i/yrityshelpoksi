@@ -5,9 +5,9 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { ProPage } from "@/components/pro-page"
 import { SITE_URL, SITE_NAME } from "@/lib/site-config"
 
-const title = "Pro — taloushallinto ja nettisivut suuremmalle volyymille 399,90 €/kk"
+const title = "Pro — taloushallinto ja nettisivut suuremmalle volyymille 389,90 €/kk"
 const description =
-  "Kirjanpito ja nettisivut samassa paketissa 399,90 €/kk. Yrityksille, joilla on suurempi volyymi — henkilökohtainen kirjanpitäjä, palkanlaskenta ja räätälöidyt nettisivut yhdellä sopimuksella."
+  "Kirjanpito ja nettisivut samassa paketissa 389,90 €/kk. Yrityksille, joilla on suurempi volyymi — henkilökohtainen kirjanpitäjä, palkanlaskenta ja räätälöidyt nettisivut yhdellä sopimuksella."
 const path = "/paketit/pro"
 
 export const metadata: Metadata = {

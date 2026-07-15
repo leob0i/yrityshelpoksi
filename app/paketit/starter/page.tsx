@@ -5,9 +5,9 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { StarterPage } from "@/components/starter-page"
 import { SITE_URL, SITE_NAME } from "@/lib/site-config"
 
-const title = "Starter — kirjanpito ja nettisivut 119,90 €/kk"
+const title = "Starter — kirjanpito ja nettisivut 109,90 €/kk"
 const description =
-  "Kirjanpito ja nettisivut samassa paketissa 119,90 €/kk. Henkilökohtainen kirjanpitäjä ja räätälöidyt nettisivut yhdellä sopimuksella."
+  "Kirjanpito ja nettisivut samassa paketissa 109,90 €/kk. Henkilökohtainen kirjanpitäjä ja räätälöidyt nettisivut yhdellä sopimuksella."
 const path = "/paketit/starter"
 
 export const metadata: Metadata = {

@@ -78,11 +78,22 @@ export function StarterPage() {
             </span>
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-lg text-white/50">
+            Aloittelevalle tai pienelle yrittäjälle kirjanpito, nettisivut ja jatkuva ylläpito yhdellä
+            kuukausimaksulla.
+          </p>
+        </motion.div>
+      </section>
+
+      {/* Kuvaus */}
+      <section className="relative bg-[#0a0a0a] pt-16 pb-16 sm:pt-20">
+        <div className="mx-auto max-w-3xl px-6 text-center">
+          <h2 className="font-mono text-6xl font-bold uppercase tracking-tight text-white sm:text-7xl">Starter</h2>
+          <p className="mx-auto mt-4 max-w-xl text-lg text-white/50">
             Starter on suunniteltu aloittavalle yrittäjälle ja toiminimelle, jolle tämä on usein ensimmäinen
             tilitoimisto ja ensimmäiset omat nettisivut. Hoidamme kirjanpidon ja verkkonäkyvyyden alusta asti
             kuntoon, jotta voit keskittyä huolettomasti liiketoiminnan käynnistämiseen.
           </p>
-        </motion.div>
+        </div>
       </section>
 
       {/* Content */}
@@ -177,7 +188,7 @@ export function StarterPage() {
           >
             <p className="text-sm text-white/50">Yhteensä</p>
             <p className="mt-2 text-4xl font-bold text-white sm:text-5xl">
-              119,90 € <span className="text-lg font-normal text-white/50">/kk</span>
+              109,90 € <span className="text-lg font-normal text-white/50">/kk</span>
             </p>
             <p className="mx-auto mt-4 max-w-xl text-sm text-emerald-400/80">
               Aloitusmaksu alk. 99 € — sisältää 6 sivua sekä tietosuoja- ja käyttöehtosivut. Laajemmat sivustot

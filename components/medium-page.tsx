@@ -83,11 +83,22 @@ export function MediumPage() {
             </span>
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-lg text-white/50">
+            Kirjanpito ja verkkonäkyvyys yhdessä palvelussa. Saat enemmän näkyvyyttä, enemmän tukea ja enemmän
+            aikaa liiketoiminnalle.
+          </p>
+        </motion.div>
+      </section>
+
+      {/* Kuvaus */}
+      <section className="relative bg-[#0a0a0a] pt-16 pb-16 sm:pt-20">
+        <div className="mx-auto max-w-3xl px-6 text-center">
+          <h2 className="font-mono text-6xl font-bold uppercase tracking-tight text-white sm:text-7xl">Medium</h2>
+          <p className="mx-auto mt-4 max-w-xl text-lg text-white/50">
             Medium on tehty kasvavalle yritykselle, jolla on jo työntekijöitä ja palkanlaskennan tarpeita.
             Nettisivusi toimivat kaksikielisesti ja niitä kehitetään aktiivisemman hakukoneoptimoinnin (SEO) avulla,
             jotta näkyvyytesi kasvaa liiketoimintasi mukana.
           </p>
-        </motion.div>
+        </div>
       </section>
 
       {/* Content */}
@@ -182,7 +193,7 @@ export function MediumPage() {
           >
             <p className="text-sm text-white/50">Yhteensä</p>
             <p className="mt-2 text-4xl font-bold text-white sm:text-5xl">
-              219,90 € <span className="text-lg font-normal text-white/50">/kk</span>
+              209,90 € <span className="text-lg font-normal text-white/50">/kk</span>
             </p>
             <p className="mx-auto mt-4 max-w-xl text-sm text-emerald-400/80">
               Aloitusmaksu alk. 99 € — sisältää 8 sivua sekä tietosuoja- ja käyttöehtosivut. Laajemmat sivustot

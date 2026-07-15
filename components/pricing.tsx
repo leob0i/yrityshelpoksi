@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 const plans = [
   {
     name: "Starter",
-    price: "119,90 €",
+    price: "109,90 €",
     period: "/kk",
     description: "Sopii aloittaville yrityksille",
     note: "Aloitusmaksu alk. 99 €",
@@ -26,7 +26,7 @@ const plans = [
   },
   {
     name: "Medium",
-    price: "219,90 €",
+    price: "209,90 €",
     period: "/kk",
     description: "Kasvaville yrityksille",
     note: "Aloitusmaksu alk. 99 €",
@@ -46,7 +46,7 @@ const plans = [
   },
   {
     name: "Pro",
-    price: "399,90 €",
+    price: "389,90 €",
     period: "/kk",
     description: "Yrityksille, joilla on suurempi volyymi",
     note: "Aloitusmaksu alk. 99 €",
@@ -88,7 +88,7 @@ export function Pricing() {
             </span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-white/50">
-            Kirjanpito ja diginäkyvyys samasta paikasta. Ei piilokuluja.
+            Kirjanpito ja diginäkyvyys samasta paikasta ilman määräaikaisuutta ja yhdellä laskulla!
           </p>
         </motion.div>
 
@@ -120,14 +120,6 @@ export function Pricing() {
               </div>
               <p className="mt-2 text-sm text-white/50">{plan.description}</p>
               {plan.note && <p className="mt-2 text-xs text-emerald-400/80">{plan.note}</p>}
-              {plan.href && (
-                <a
-                  href={plan.href}
-                  className="mt-2 inline-block text-xs text-white/40 underline underline-offset-2 transition-colors hover:text-white"
-                >
-                  Katso tarkemmin
-                </a>
-              )}
 
               <ul className="mt-8 space-y-3">
                 {plan.features.map((feature) => (
@@ -138,16 +130,23 @@ export function Pricing() {
                 ))}
               </ul>
 
-              <Button
-                asChild
-                className={`mt-8 w-full ${
-                  plan.featured
-                    ? "bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:from-emerald-500 hover:to-teal-500"
-                    : "border border-white/10 bg-white/5 text-white hover:bg-white/10"
-                }`}
-              >
-                <a href="/yhteys">{plan.cta}</a>
-              </Button>
+              <div className="mt-8 flex flex-col gap-3">
+                {plan.href && (
+                  <Button
+                    asChild
+                    variant="outline"
+                    className="w-full border border-white/10 bg-transparent text-white hover:bg-white/10"
+                  >
+                    <a href={plan.href}>Lue lisää</a>
+                  </Button>
+                )}
+                <Button
+                  asChild
+                  className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:from-emerald-500 hover:to-teal-500"
+                >
+                  <a href="/yhteys">{plan.cta}</a>
+                </Button>
+              </div>
             </motion.div>
           ))}
         </div>

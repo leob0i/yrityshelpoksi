@@ -84,11 +84,22 @@ export function ProPage() {
             </span>
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-lg text-white/50">
+            Täysi ratkaisu yrityksille, jotka haluavat kasvaa määrätietoisesti. Taloushallinto, verkkonäkyvyys ja
+            jatkuva kehitys yhdestä paikasta.
+          </p>
+        </motion.div>
+      </section>
+
+      {/* Kuvaus */}
+      <section className="relative bg-[#0a0a0a] pt-16 pb-16 sm:pt-20">
+        <div className="mx-auto max-w-3xl px-6 text-center">
+          <h2 className="font-mono text-6xl font-bold uppercase tracking-tight text-white sm:text-7xl">Pro</h2>
+          <p className="mx-auto mt-4 max-w-xl text-lg text-white/50">
             Pro on rakennettu vakiintuneelle yritykselle, jonka tositemäärä ja palkanlaskenta ovat suurempia.
             Saat monikieliset nettisivut ajanvarauskalenterilla sekä prioriteettituen sekä taloushallinnon että
             nettisivujen puolella.
           </p>
-        </motion.div>
+        </div>
       </section>
 
       {/* Content */}
@@ -183,7 +194,7 @@ export function ProPage() {
           >
             <p className="text-sm text-white/50">Yhteensä</p>
             <p className="mt-2 text-4xl font-bold text-white sm:text-5xl">
-              399,90 € <span className="text-lg font-normal text-white/50">/kk</span>
+              389,90 € <span className="text-lg font-normal text-white/50">/kk</span>
             </p>
             <p className="mx-auto mt-4 max-w-xl text-sm text-emerald-400/80">Aloitusmaksu alk. 99 €</p>
             <Button
