@@ -24,6 +24,7 @@ const addOns = [
   { label: "Tosite", price: "1,50 €/tosite" },
   { label: "Palkanlaskenta", price: "15,90 €/palkanlaskenta" },
   { label: "Tilinpäätös ja muut työt (hakemusten tekeminen ja lähettäminen jne.)", price: "80,00 €/h" },
+  { label: "Muut Fennoa-kulut", price: "Laskutetaan erikseen" },
   { label: "Sähköpostilaatikko, esim. info@yrityksesi.fi", price: "+5 €/kk / laatikko" },
   {
     label: "Verkkokauppa",
@@ -147,9 +148,10 @@ export function StarterPage() {
                 Yhteydenpito ja muutokset
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-white/50">
-                Saat meihin nopeasti yhteyden vuoden jokaisena päivänä ja nettisivun pienet päivitykset WhatsAppilla
-                kerran kuukaudessa. — lähetä viestillä uusi kuva, tarjous tai muutos ja me päivitämme sivut. (sisältää
-                noin 1h päivitystyötä, kaikki ylimenevä laskutetaan 30€/h).
+                Saat yhteyden sekä henkilökohtaiseen kirjanpitäjääsi että nettisivuista vastaavaan asiantuntijaasi
+                samassa WhatsApp-keskustelussa vuoden jokaisena päivänä. Voit kysyä kirjanpidosta, lähettää kuitteja
+                tai pyytää nettisivuille muutoksia, kuten uusia kuvia, tarjouksia tai tekstejä. (sisältää noin 2h
+                päivitystyötä, kaikki ylimenevä laskutetaan 30€/h).
               </p>
             </div>
           </motion.div>

@@ -152,9 +152,10 @@ export function MediumPage() {
                 Yhteydenpito ja muutokset
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-white/50">
-                Saat meihin nopeasti yhteyden vuoden jokaisena päivänä ja nettisivun pienet päivitykset WhatsAppilla
-                kerran kuukaudessa. — lähetä viestillä uusi kuva, tarjous tai muutos ja me päivitämme sivut. (sisältää
-                noin 2h päivitystyötä, kaikki ylimenevä laskutetaan 30€/h).
+                Saat yhteyden sekä henkilökohtaiseen kirjanpitäjääsi että nettisivuista vastaavaan asiantuntijaasi
+                samassa WhatsApp-keskustelussa vuoden jokaisena päivänä. Voit kysyä kirjanpidosta, lähettää kuitteja
+                tai pyytää nettisivuille muutoksia, kuten uusia kuvia, tarjouksia tai tekstejä. (sisältää noin 2h
+                päivitystyötä, kaikki ylimenevä laskutetaan 30€/h).
               </p>
             </div>
           </motion.div>

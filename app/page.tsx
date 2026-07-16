@@ -4,6 +4,7 @@ import { Hero } from "@/components/hero"
 import { Features } from "@/components/features"
 import { HowItWorks } from "@/components/how-it-works"
 import { Pricing } from "@/components/pricing"
+import { WhyUs } from "@/components/why-us"
 import { Faq } from "@/components/faq"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
@@ -62,6 +63,7 @@ export default function Page() {
       <Features />
       <HowItWorks />
       <Pricing />
+      <WhyUs />
       <Faq />
       <Footer />
       <WhatsAppButton />

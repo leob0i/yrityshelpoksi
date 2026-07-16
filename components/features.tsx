@@ -55,7 +55,9 @@ export function Features() {
             </span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-white/50">
-            Kirjanpito ja digitaalinen näkyvyys samasta paikasta — keskity liiketoimintaasi, me hoidamme loput.
+            Kirjanpito ja Digitoimisto Apell x Repola yhdistää saman katon alle nykyaikaisen taloushallinnon ja
+            digitaaliset kasvupalvelut. Saat henkilökohtaisen kirjanpitäjän lisäksi nettisivut, verkkokaupan,
+            sähköpostit, ylläpidon ja jatkuvan teknisen tuen yhdeltä kumppanilta.
           </p>
         </motion.div>
 
@@ -64,7 +66,7 @@ export function Features() {
           {features.map((feature, i) => (
             <motion.div
               key={feature.title}
-              className="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.02] p-6 transition-colors hover:border-emerald-500/30 hover:bg-white/[0.04]"
+              className="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.02] p-4 transition-colors hover:border-emerald-500/30 hover:bg-white/[0.04] sm:p-6"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -76,11 +78,13 @@ export function Features() {
               </div>
 
               <div className="relative">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500/20 to-teal-500/20">
-                  <feature.icon className="h-6 w-6 text-emerald-400" />
+                <div className="flex items-center gap-3 sm:block">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500/20 to-teal-500/20 sm:mb-4 sm:h-12 sm:w-12">
+                    <feature.icon className="h-5 w-5 text-emerald-400 sm:h-6 sm:w-6" />
+                  </div>
+                  <h3 className="text-base font-semibold text-white sm:mb-2 sm:text-lg">{feature.title}</h3>
                 </div>
-                <h3 className="mb-2 text-lg font-semibold text-white">{feature.title}</h3>
-                <p className="text-sm leading-relaxed text-white/50">{feature.description}</p>
+                <p className="mt-2 text-sm leading-relaxed text-white/50 sm:mt-0">{feature.description}</p>
               </div>
             </motion.div>
           ))}
