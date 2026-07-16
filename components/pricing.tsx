@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 const plans = [
   {
     name: "Starter",
-    price: "109,90 €",
+    price: "99,90 €",
     period: "/kk",
     description: "Sopii aloittaville yrityksille",
     note: "Aloitusmaksu alk. 99 €",
@@ -26,7 +26,7 @@ const plans = [
   },
   {
     name: "Medium",
-    price: "209,90 €",
+    price: "199,90 €",
     period: "/kk",
     description: "Kasvaville yrityksille",
     note: "Aloitusmaksu alk. 99 €",

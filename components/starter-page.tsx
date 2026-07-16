@@ -188,7 +188,7 @@ export function StarterPage() {
           >
             <p className="text-sm text-white/50">Yhteensä</p>
             <p className="mt-2 text-4xl font-bold text-white sm:text-5xl">
-              109,90 € <span className="text-lg font-normal text-white/50">/kk</span>
+              99,90 € <span className="text-lg font-normal text-white/50">/kk</span>
             </p>
             <p className="mx-auto mt-4 max-w-xl text-sm text-emerald-400/80">
               Aloitusmaksu alk. 99 € — sisältää 6 sivua sekä tietosuoja- ja käyttöehtosivut. Laajemmat sivustot
