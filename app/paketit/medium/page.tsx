@@ -5,9 +5,9 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MediumPage } from "@/components/medium-page"
 import { SITE_URL, SITE_NAME } from "@/lib/site-config"
 
-const title = "Medium — kirjanpito, palkanlaskenta ja nettisivut 209,90 €/kk"
+const title = "Medium — kirjanpito, palkanlaskenta ja nettisivut 199,90 €/kk"
 const description =
-  "Kirjanpito ja nettisivut samassa paketissa 209,90 €/kk. Sopii kasvaville yrityksille — henkilökohtainen kirjanpitäjä, palkanlaskenta ja räätälöidyt nettisivut yhdellä sopimuksella."
+  "Kirjanpito ja nettisivut samassa paketissa 199,90 €/kk. Sopii kasvaville yrityksille — henkilökohtainen kirjanpitäjä, palkanlaskenta ja räätälöidyt nettisivut yhdellä sopimuksella."
 const path = "/paketit/medium"
 
 export const metadata: Metadata = {
@@ -41,7 +41,7 @@ const serviceJsonLd = {
   areaServed: "FI",
   offers: {
     "@type": "Offer",
-    price: "219.90",
+    price: "199.90",
     priceCurrency: "EUR",
     priceSpecification: {
       "@type": "UnitPriceSpecification",

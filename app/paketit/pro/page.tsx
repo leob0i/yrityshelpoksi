@@ -41,7 +41,7 @@ const serviceJsonLd = {
   areaServed: "FI",
   offers: {
     "@type": "Offer",
-    price: "399.90",
+    price: "389.90",
     priceCurrency: "EUR",
     priceSpecification: {
       "@type": "UnitPriceSpecification",
