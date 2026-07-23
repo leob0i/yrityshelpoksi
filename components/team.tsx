@@ -9,7 +9,7 @@ const team = [
   {
     firstName: "eero",
     lastName: "repola",
-    image: "/eero.repola.png",
+    image: "/eero.repola.webp",
     alt: "Eero Repola",
     bio: "Eero on aktiivinen, osaava ja aina valmiudessa oleva asiakaslähtöinen kirjanpitäjä. Eerolta löytyy kokemus kirjanpidosta, tilinpäätöksistä ja palkanlaskennasta.",
     skills: ["Kirjanpito", "Asiakaspalvelu", "Konsultointi", "Asiakkuudet", "Toimitusjohtaja", "Verosuunnittelu"],
@@ -23,7 +23,7 @@ const team = [
   {
     firstName: "leo",
     lastName: "apell",
-    image: "/leo.apell.jpeg",
+    image: "/leo.apell.webp",
     alt: "Leo Apell",
     bio: "Leo on Leo Digital Suomen perustaja, joka rakentaa yrityksille verkkosivuja, sovelluksia ja digitaalisia palveluja täysin etänä. Entinen BMW:n ja Mercedes-Benzin merkkihuoltojen mekaanikko yhdistää autoalan huolellisuuden moderniin web-kehitykseen.",
     skills: ["Verkkosivut", "Sovelluskehitys", "SEO", "Tekninen toteutus", "Vahva tekoälyn osaaminen"],
@@ -63,7 +63,7 @@ export function Team() {
           {team.map((member, i) => (
             <motion.div
               key={member.firstName}
-              className="flex flex-col items-center gap-6 rounded-2xl border border-white/5 bg-white/[0.02] p-8 text-center sm:p-10"
+              className="flex flex-col items-center gap-8 rounded-3xl border border-white/5 bg-white/[0.02] p-8 text-center sm:p-10"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -76,8 +76,17 @@ export function Team() {
                 </span>
               </h3>
 
-              <div className="relative h-48 w-48 shrink-0 overflow-hidden rounded-2xl border border-white/10 bg-white/5 sm:h-56 sm:w-56 lg:h-64 lg:w-64">
-                <Image src={member.image} alt={member.alt} fill sizes="256px" className="object-cover" />
+              <div className="relative w-56 shrink-0 sm:w-64 lg:w-72">
+                <div className="absolute -inset-1.5 rounded-[2rem] bg-gradient-to-br from-emerald-500/30 via-teal-500/20 to-transparent blur-xl" />
+                <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-white/10 shadow-2xl shadow-black/50">
+                  <Image
+                    src={member.image}
+                    alt={member.alt}
+                    fill
+                    sizes="(min-width: 1024px) 288px, (min-width: 640px) 256px, 224px"
+                    className="object-cover"
+                  />
+                </div>
               </div>
 
               <div className="w-full">
