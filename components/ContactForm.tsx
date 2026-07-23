@@ -36,6 +36,7 @@ export function ContactForm() {
           name: formData.get("name"),
           email: formData.get("email"),
           phone: formData.get("phone"),
+          interest: formData.get("interest"),
           message: formData.get("message"),
         }),
       })
@@ -103,6 +104,34 @@ export function ContactForm() {
           className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-white/30 outline-none transition-colors focus:border-emerald-500/50"
           placeholder="040 123 4567"
         />
+      </div>
+
+      <div>
+        <label htmlFor="interest" className="mb-2 block text-sm text-white/70">
+          Mikä kiinnostaa?
+        </label>
+        <select
+          id="interest"
+          name="interest"
+          defaultValue=""
+          className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition-colors focus:border-emerald-500/50"
+        >
+          <option value="" disabled className="bg-[#0a0a0a]">
+            Valitse vaihtoehto
+          </option>
+          <option value="Starter" className="bg-[#0a0a0a]">
+            Starter
+          </option>
+          <option value="Medium" className="bg-[#0a0a0a]">
+            Medium
+          </option>
+          <option value="Pro" className="bg-[#0a0a0a]">
+            Pro
+          </option>
+          <option value="Muu" className="bg-[#0a0a0a]">
+            Muu
+          </option>
+        </select>
       </div>
 
       <div>

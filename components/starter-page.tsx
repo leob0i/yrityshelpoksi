@@ -199,8 +199,9 @@ export function StarterPage() {
             <Button
               size="lg"
               className="mt-8 h-12 bg-gradient-to-r from-emerald-600 to-teal-600 px-8 text-base font-semibold text-white hover:from-emerald-500 hover:to-teal-500"
+              asChild
             >
-              Aloita nyt
+              <a href="/yhteys">Aloita nyt</a>
             </Button>
           </motion.div>
         </div>

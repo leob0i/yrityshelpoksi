@@ -5,6 +5,7 @@ import { Features } from "@/components/features"
 import { HowItWorks } from "@/components/how-it-works"
 import { Pricing } from "@/components/pricing"
 import { WhyUs } from "@/components/why-us"
+import { Team } from "@/components/team"
 import { Faq } from "@/components/faq"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
@@ -64,6 +65,7 @@ export default function Page() {
       <HowItWorks />
       <Pricing />
       <WhyUs />
+      <Team />
       <Faq />
       <Footer />
       <WhatsAppButton />

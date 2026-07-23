@@ -1,13 +1,15 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { Mail, MessageCircle, Phone } from "lucide-react"
 import { ContactForm } from "@/components/ContactForm"
+import { Button } from "@/components/ui/button"
 
 export function ContactPage() {
   return (
     <section className="relative overflow-hidden bg-[#0a0a0a] pt-16 pb-24">
       <motion.div
-        className="relative mb-16 flex h-64 w-full items-center justify-center overflow-hidden bg-black sm:h-80"
+        className="relative mb-16 flex h-40 w-full items-center justify-center overflow-hidden bg-black sm:h-48"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
@@ -45,10 +47,44 @@ export function ContactPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.6 }}
         >
-          <p className="mx-auto max-w-xl text-lg text-white/50">
-            Alla olevan yhteydenottolomakkeen kautta voit lähettää meille viestiä, joka saapuu suoraan
-            sähköposteihimme. Voit myös soittaa WhatsAppin kautta, tai lähettää sähköpostia milloin tahansa.
+          <img src="/logo_horizontal_transparent.png" alt="Apell x Repola" className="mx-auto h-14 w-auto" />
+
+          <p className="mx-auto mt-6 max-w-xl text-lg text-white/50">
+            Voit ottaa meihin yhteyden mitä vain kanavaa käyttäen, vastaamme mahdollisimman pian kuitenkin 24h
+            sisällä.
           </p>
+
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
+            <Button
+              asChild
+              className="h-11 gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 px-6 text-sm font-semibold text-white hover:from-emerald-500 hover:to-teal-500"
+            >
+              <a
+                href="https://api.whatsapp.com/send/?phone=%2B358452031377&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MessageCircle className="h-4 w-4" />
+                WhatsApp
+              </a>
+            </Button>
+
+            <a
+              href="tel:+358452031377"
+              className="flex items-center gap-2 text-white/70 transition-colors hover:text-white"
+            >
+              <Phone className="h-4 w-4 text-emerald-400" />
+              +358452031377
+            </a>
+
+            <a
+              href="mailto:leo@leodigital.fi"
+              className="flex items-center gap-2 text-white/70 transition-colors hover:text-white"
+            >
+              <Mail className="h-4 w-4 text-emerald-400" />
+              leo@leodigital.fi
+            </a>
+          </div>
         </motion.div>
 
         <motion.div

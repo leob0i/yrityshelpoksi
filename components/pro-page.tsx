@@ -34,7 +34,7 @@ const addOns = [
   { label: "Lisäsähköpostit, esim. info@yrityksesi.fi", price: "+5 €/kk / laatikko" },
   {
     label: "Verkkokauppa",
-    price: "+39–79 €/kk",
+    price: "+29–99 €/kk",
     note: "Entä maksujen välitys? Kun asiakkaasi maksaa verkkokaupassa, rahaliikenne kulkee maksunvälittäjän kautta (esim. Stripe tai Visma Pay). He veloittavat jokaisesta myynnistä pienen palkkion — yleensä muutama prosentti + kiinteä sentti per tapahtuma, joillakin lisäksi kuukausimaksu. Tämä on alan vakiokäytäntö kaikilla verkkokaupoilla, ja maksat sen suoraan palveluntarjoajalle. Me emme ota siitä osuutta. Autamme sinut valitsemaan sopivimman vaihtoehdon ja kerromme etukäteen mitä se maksaa.",
   },
 ]
@@ -202,8 +202,9 @@ export function ProPage() {
             <Button
               size="lg"
               className="mt-8 h-12 bg-gradient-to-r from-emerald-600 to-teal-600 px-8 text-base font-semibold text-white hover:from-emerald-500 hover:to-teal-500"
+              asChild
             >
-              Aloita nyt
+              <a href="/yhteys">Aloita nyt</a>
             </Button>
           </motion.div>
         </div>

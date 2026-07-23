@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/paketit/pro", label: "PRO", mono: true },
   { href: "/#nain-se-toimii", label: "Näin se toimii" },
   { href: "/#hinnat", label: "Hinnat" },
+  { href: "/#tiimi", label: "Tiimi" },
 ]
 
 export function Navbar() {
